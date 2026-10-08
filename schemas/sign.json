@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sign",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "text",
+    "near"
+  ],
+  "properties": {
+    "text": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "near": {
+      "type": "string",
+      "enum": [
+        "praca",
+        "hall",
+        "market",
+        "cafe",
+        "library",
+        "shop",
+        "bank",
+        "datacenter",
+        "factory",
+        "lab",
+        "workshop",
+        "eyes",
+        "wind",
+        "lago",
+        "porto",
+        "police",
+        "court",
+        "news",
+        "church",
+        "restaurant",
+        "hospital",
+        "school",
+        "post",
+        "studio",
+        "farm"
+      ]
+    },
+    "proposed_by": {
+      "type": "string",
+      "maxLength": 40
+    }
+  }
+}
